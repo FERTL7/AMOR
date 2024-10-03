@@ -1,0 +1,84 @@
+/* ESTILOS PARA EL CONTENEDOR PADRE (fondo-login) */
+
+.fondo-login {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../IMAGES/FONDITO.png);
+}
+
+/* ESTILOS PARA EL CONTENEDOR PRINCIPAL  */
+
+
+.container {
+    max-width: 500px;
+    background: #F8F9FD;
+    background: linear-gradient(0deg, rgb(210, 178, 238) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .container {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 450px;
+    }
+}
+
+
+.heading {
+    text-align: center;
+    font-weight: 1000;
+    font-size: 30px;
+    color: rgb(50, 74, 169);
+}
+
+
+.sp {
+    text-decoration: none; 
+}
+

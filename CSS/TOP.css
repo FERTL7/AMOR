@@ -1,0 +1,179 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(../IMAGES/FONDITO.png);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+  /*  background-image: linear-gradient(to right,
+            #a8d8ea,
+            #f4c3d7,
+            #e2c6e9,
+            #b7e5d8
+        );
+    background-size: cover;
+            */
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 800px;
+    font-family: Quicksand;
+    font-size: 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+    background-size: 100% 1.2rem;
+    line-height: 1.2rem;
+    padding: 1.4rem 2rem 0.8rem 4.5rem;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.page::before,
+.page::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.page::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+}
+
+.page::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+}
+
+.page:hover::before,
+.page:hover::after {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.margin {
+    position: absolute;
+    border-left: 1px solid #d88;
+    height: 100%;
+    left: 3.3rem;
+    top: 0;
+    line-height: 1.5;
+}
+
+.page p {
+    margin: 0;
+    text-indent: 1rem;
+    padding-bottom: 1.2rem;
+    color: black;
+    line-height: 24px;
+    text-align: justify;
+}
+
+
+
+.button {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 523;
+    font-style: normal;
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+}
+
+.button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+    transform: scale(1.1);
+}
+
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hoverEffect div {
+    background: rgb(189, 25, 101);
+    background: linear-gradient(90deg, rgba(222, 0, 75, 1) 0%, rgba(191, 70, 255, 1) 49%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 40rem;
+    width: 20rem;
+    height: 20rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+}
+
+@keyframes effect {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
